@@ -106,18 +106,19 @@
 
     grid.innerHTML = PROJECTS.map((p, i) => {
       const d = p[lang];
-      const no = String(i + 1).padStart(2, "0");
+      // "Cinemania — Film Platformu" → büyük başlık: "Cinemania", alt başlık: "Film Platformu"
+      const [name, sub = ""] = d.title.split("—").map((x) => x.trim());
       return `
         <article class="panel project-card reveal is-visible" data-category="${p.category}" data-id="${p.id}">
           <header class="project-head">
-            <span class="display project-no">${t.project} ${no}</span>
+            <h3 class="display project-name">${escapeHtml(name)}</h3>
             ${d.badge ? `<span class="project-badge">${escapeHtml(d.badge)}</span>` : ""}
           </header>
           <div class="project-media">
             <img src="${p.image}" alt="${escapeHtml(d.title)}" loading="lazy" data-label="${escapeHtml(shortName(d.title))}">
           </div>
           <p class="project-meta">${escapeHtml(d.context)} · ${p.year}</p>
-          <h3 class="project-title">${escapeHtml(d.title)}</h3>
+          <p class="project-title">${escapeHtml(sub)}</p>
           <p class="project-summary">${escapeHtml(d.summary)}</p>
           <ul class="tags">${p.tech.map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ul>
           <div class="project-actions">
