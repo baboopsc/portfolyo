@@ -27,9 +27,8 @@ const I18N_EN = {
   "toc.contact": "contact",
 
   "about.title": "Hello,<br><span class=\"hl\">I'm Ali!</span>",
-  "about.p1": "I live in Denizli and I'm in my final year of Computer Engineering at Pamukkale University. My favorite part of coding is the moment an idea in my head turns into something that actually works. If a button fetches the right data and the page looks perfect on a phone too, it was a good day.",
-  "about.p2": "I believe the best way to learn is to build, so there's always a project on my desk next to my classes. During my internship at Kodpit I wrote APIs with NestJS, and we shipped a movie platform as a team. I delivered a complete website to a gym in Antakya, and right now I'm building a site for a plant nursery.",
-  "about.p3": "I use AI tools every day, but I never let go of the wheel: I read and test the code they produce, and I don't ship anything I don't understand. Now I want to join a team where I can keep growing.",
+  "about.p1": "I'm a final-year Computer Engineering student at Pamukkale University and a full-stack web developer. I use React and Redux on the frontend, and Node.js, NestJS and PostgreSQL on the backend.",
+  "about.p2": "I worked as a full-stack intern at Kodpit Teknoloji, and I also build websites for businesses as a freelancer.",
   "about.status": "Open to internships &amp; junior roles",
 
   "stats.repos": "GitHub repos",
