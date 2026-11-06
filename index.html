@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="tr" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali Muhsin Mışraklı — Junior Full Stack Developer</title>
+  <meta name="description" content="Ali Muhsin Mışraklı — Denizli'de yaşayan Junior Full Stack Developer. React, Redux, Node.js, NestJS ve PostgreSQL ile web uygulamaları geliştiriyorum.">
+  <meta name="author" content="Ali Muhsin Mışraklı">
+  <meta name="theme-color" content="#FBF6E6">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Paylaşım önizlemesi (LinkedIn, WhatsApp vb.)
+       Site yayına girince og:image'ı TAM adresle değiştir:
+       ör. https://SITE-ADRESIN.onrender.com/images/og-image.png -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ali Muhsin Mışraklı — Junior Full Stack Developer">
+  <meta property="og:description" content="React, Node.js, NestJS ve PostgreSQL ile web uygulamaları. Projelerime göz at.">
+  <meta property="og:image" content="images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rubik:wght@800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ali Muhsin Mışraklı",
+    "jobTitle": "Junior Full Stack Developer",
+    "email": "mailto:uyaali52@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Denizli", "addressCountry": "TR" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Pamukkale University" },
+    "knowsAbout": ["React", "Redux", "JavaScript", "Node.js", "NestJS", "PostgreSQL"],
+    "sameAs": [
+      "https://github.com/baboopsc",
+      "https://www.linkedin.com/in/ali-muhsin-misrakli-312574285"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">İçeriğe geç</a>
+
+  <!-- ============ ÜST MENÜ ============ -->
+  <header class="site-header" id="siteHeader">
+    <a href="#hero" class="logo" aria-label="Ana sayfa">ali<span>.</span></a>
+
+    <nav class="nav" id="nav" aria-label="Ana menü">
+      <a href="#about" data-i18n="nav.about">Hakkımda</a>
+      <a href="#skills" data-i18n="nav.skills">Yetenekler</a>
+      <a href="#experience" data-i18n="nav.experience">Deneyim</a>
+      <a href="#projects" data-i18n="nav.projects">Projeler</a>
+      <a href="#contact" data-i18n="nav.contact">İletişim</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Dili değiştir / Change language">
+        <span data-lang="tr">TR</span>/<span data-lang="en">EN</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menü">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" class="panels">
+
+    <!-- ============ 01 · KAPAK ============ -->
+    <section class="panel p-light hero" id="hero">
+      <div class="hero-corner hero-corner--left" data-i18n="hero.kicker">Denizli · Remote'a açık</div>
+      <a class="hero-corner hero-corner--right" href="https://github.com/baboopsc" target="_blank" rel="noopener">@baboopsc</a>
+
+      <div class="hero-center">
+        <div class="hero-title-wrap">
+          <h1 class="display hero-title"><span class="sr-only">Ali Muhsin Mışraklı — </span>JUNIOR DEV<br>PORTFOLIO</h1>
+          <span class="name-pill">Ali Muhsin Mışraklı</span>
+        </div>
+        <p class="hero-sub">React · Redux · Node.js · NestJS · PostgreSQL</p>
+        <div class="hero-cta">
+          <a class="btn btn--dark" href="#projects" data-i18n="hero.cta1">Projelerim</a>
+          <a class="btn btn--outline" href="assets/Ali_Muhsin_Misrakli_CV.pdf" download data-i18n="hero.cta2">CV İndir</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 02 · İÇİNDEKİLER + MERHABA ============ -->
+    <div class="row row--toc">
+      <nav class="panel p-dark toc reveal" aria-label="İçindekiler">
+        <h2 class="display toc-title" data-i18n="toc.title">İÇİN-<br>DEKİLER</h2>
+        <ol class="toc-list">
+          <li><a href="#about"><span>02</span><span data-i18n="toc.about">hakkımda</span></a></li>
+          <li><a href="#skills"><span>03</span><span data-i18n="toc.skills">yetenekler</span></a></li>
+          <li><a href="#experience"><span>04</span><span data-i18n="toc.exp">deneyim</span></a></li>
+          <li><a href="#projects"><span>05</span><span data-i18n="toc.projects">projeler</span></a></li>
+          <li><a href="#contact"><span>06</span><span data-i18n="toc.contact">iletişim</span></a></li>
+        </ol>
+      </nav>
+
+      <section class="panel p-cream about reveal" id="about">
+        <figure class="about-photo">
+          <img src="images/ben.jpg" alt="Ali Muhsin Mışraklı" width="600" height="800" loading="lazy"
+               data-placeholder="photo" data-file="images/ben.jpg">
+        </figure>
+        <div class="about-text">
+          <h2 class="display about-title" data-i18n="about.title">Merhaba,<br><span class="hl">ben Ali!</span></h2>
+          <p data-i18n="about.p1">Pamukkale Üniversitesi'nde Bilgisayar Mühendisliği son sınıf öğrencisiyim (mezuniyet: Haziran 2027). React, Redux, Node.js, NestJS ve PostgreSQL ile full-stack web uygulamaları geliştiriyorum.</p>
+          <p data-i18n="about.p2">Kodpit Teknoloji'deki stajımda RESTful API servisleri ve bir React arayüzü geliştirdim, projeyi Render'da canlıya aldım. GoIT Full Stack bootcamp'inde eğitim aldım ve gerçek bir müşteri için bir web sitesini baştan sona teslim ettim.</p>
+          <p data-i18n="about.p3">Yapay zekâ destekli kodlama araçlarını her gün kullanıyorum; ama yayına almadan önce çıktıyı mutlaka okuyup test ediyorum.</p>
+          <p class="status-badge">
+            <span class="dot" aria-hidden="true"></span>
+            <span data-i18n="about.status">Staj ve junior pozisyonlara açığım</span>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ SAYILAR ============ -->
+    <ul class="row row--stats">
+      <li class="panel p-blue stat reveal"><strong class="display">40+</strong><span data-i18n="stats.repos">GitHub reposu</span></li>
+      <li class="panel p-blue stat reveal"><strong class="display" id="statProjects">6</strong><span data-i18n="stats.projects">Öne çıkan proje</span></li>
+      <li class="panel p-blue stat reveal"><strong class="display">1</strong><span data-i18n="stats.client">Gerçek müşteri işi</span></li>
+      <li class="panel p-blue stat reveal"><strong class="display">2027</strong><span data-i18n="stats.grad">Mezuniyet</span></li>
+    </ul>
+
+    <!-- ============ 03 · YETENEKLER ============ -->
+    <section class="panel p-cream skills reveal" id="skills">
+      <h2 class="display section-title" data-i18n="skills.title">Yetkinliklerim</h2>
+
+      <div class="skills-grid">
+        <div class="skill-col">
+          <h3 class="pill-label" data-i18n="skills.tech">teknik</h3>
+          <dl class="skill-list">
+            <div><dt>Frontend</dt><dd>React, Redux Toolkit, JavaScript, HTML, CSS, Vite, React Router</dd></div>
+            <div><dt>Backend</dt><dd>Node.js, NestJS, REST API, Axios</dd></div>
+            <div><dt data-i18n="skills.db">Veritabanı</dt><dd>PostgreSQL, MongoDB, SQLite</dd></div>
+            <div><dt data-i18n="skills.tools">Araçlar</dt><dd>Git / GitHub, Docker, CI/CD, Render, Claude Code</dd></div>
+          </dl>
+        </div>
+
+        <div class="skill-col">
+          <h3 class="pill-label" data-i18n="skills.soft">kişisel</h3>
+          <ul class="bullet-list">
+            <li data-i18n="soft.1">Müşteriyle doğrudan iletişim: ihtiyacı dinleyip net bir plana dökme</li>
+            <li data-i18n="soft.2">Uçtan uca teslim: tasarımdan yayına kadar tüm süreç</li>
+            <li data-i18n="soft.3">Ekip çalışması: Git ile düzenli, okunabilir commit'ler</li>
+            <li data-i18n="soft.4">Sorumlu AI kullanımı: çıktıyı okuyup test ederek ilerleme</li>
+          </ul>
+        </div>
+
+        <div class="skill-col">
+          <h3 class="pill-label" data-i18n="skills.lang">diller</h3>
+          <ul class="bullet-list">
+            <li data-i18n="lang.tr">Türkçe — ana dil</li>
+            <li data-i18n="lang.en">İngilizce — B1 (orta seviye)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 · DENEYİM & EĞİTİM ============ -->
+    <section class="panel p-light experience reveal" id="experience">
+      <h2 class="display section-title" data-i18n="exp.title">Deneyim &amp; Eğitim</h2>
+
+      <ol class="exp-grid">
+        <li class="exp-item">
+          <div class="exp-thumb" aria-hidden="true">K</div>
+          <span class="pill-label pill-label--solid" data-i18n="exp.kodpit.tag">staj</span>
+          <p class="exp-date" data-i18n="exp.kodpit.date">Tem 2026 — Ağu 2026</p>
+          <h3 data-i18n="exp.kodpit.role">Full-Stack Developer Stajyeri</h3>
+          <p class="exp-place">Kodpit Teknoloji A.Ş. · Denizli</p>
+          <ul class="bullet-list bullet-list--sm">
+            <li data-i18n="exp.kodpit.b1">NestJS, PostgreSQL ve SQLite ile kullanıcı yönetimi, yorum sistemi ve ilişkisel veri modellerini kapsayan RESTful API servisleri geliştirdim.</li>
+            <li data-i18n="exp.kodpit.b2">Film platformu Cinemania'nın arayüzünü React, Vite ve TMDB API ile ekip arkadaşlarımla birlikte geliştirdim.</li>
+            <li data-i18n="exp.kodpit.b3">Projeyi Render'da canlıya aldım; versiyon kontrolünü Git/GitHub ile yönettim.</li>
+          </ul>
+        </li>
+        <li class="exp-item">
+          <div class="exp-thumb" aria-hidden="true">G</div>
+          <span class="pill-label pill-label--solid" data-i18n="exp.goit.tag">bootcamp</span>
+          <p class="exp-date" data-i18n="exp.goit.date">Oca 2026 — Eyl 2026</p>
+          <h3>Full Stack Web Development</h3>
+          <p class="exp-place">GoIT</p>
+          <p class="exp-desc" data-i18n="exp.goit.desc">React, Redux ve Node.js odaklı full-stack web geliştirme eğitimi. TravelTrucks gibi projeler bu süreçte çıktı.</p>
+        </li>
+        <li class="exp-item">
+          <div class="exp-thumb" aria-hidden="true">PAÜ</div>
+          <span class="pill-label pill-label--solid" data-i18n="exp.pau.tag">lisans</span>
+          <p class="exp-date" data-i18n="exp.pau.date">Eyl 2023 — Haz 2027 (beklenen)</p>
+          <h3 data-i18n="exp.pau.role">Bilgisayar Mühendisliği</h3>
+          <p class="exp-place" data-i18n="exp.pau.place">Pamukkale Üniversitesi · Denizli</p>
+          <p class="exp-desc" data-i18n="exp.pau.desc">Son sınıftayım. Görüntü işleme ve bilgisayar ağları gibi derslerin yanında kendi projelerimi geliştiriyorum.</p>
+        </li>
+      </ol>
+
+      <div class="certs">
+        <h3 class="pill-label" data-i18n="exp.certs">sertifikalar</h3>
+        <ul class="cert-list">
+          <li>Introduction to Software Engineering</li>
+          <li>Continuous Integration and Continuous Delivery (CI/CD)</li>
+          <li>Fullstack Developer</li>
+        </ul>
+        <a class="btn btn--dark" href="assets/Ali_Muhsin_Misrakli_CV.pdf" download data-i18n="hero.cta2">CV İndir</a>
+      </div>
+    </section>
+
+    <!-- ============ 05 · PROJELER ============ -->
+    <section class="panel p-blue projects-head reveal" id="projects">
+      <h2 class="display projects-title" data-i18n="projects.title">PROJE-<br>LERİM</h2>
+      <p class="projects-lead" data-i18n="projects.lead">Staj, bootcamp, ders ve gerçek müşteri işlerinden seçtiğim projeler.</p>
+      <div class="filters" id="filters">
+        <button class="filter is-active" type="button" data-filter="all" data-i18n="filter.all">Tümü</button>
+        <button class="filter" type="button" data-filter="app" data-i18n="filter.app">Web Uygulaması</button>
+        <button class="filter" type="button" data-filter="web" data-i18n="filter.web">Web Sitesi</button>
+        <button class="filter" type="button" data-filter="cv" data-i18n="filter.cv">Görüntü İşleme</button>
+      </div>
+    </section>
+
+    <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+
+    <a class="panel p-dark more-repos reveal" href="https://github.com/baboopsc?tab=repositories" target="_blank" rel="noopener">
+      <span data-i18n="projects.more">Diğer 40+ repom GitHub'da</span>
+      <span class="arrow" aria-hidden="true">↗</span>
+    </a>
+
+    <!-- ============ NASIL ÇALIŞIRIM ============ -->
+    <section class="panel p-cream process reveal" id="process">
+      <h2 class="display section-title" data-i18n="process.title">Nasıl Çalışırım?</h2>
+      <ol class="process-list">
+        <li>
+          <span class="step-no display">01</span>
+          <h3 data-i18n="process.1.t">Keşif</h3>
+          <p data-i18n="process.1.d">İhtiyacı, kullanıcıyı ve beklentileri netleştiririm; gereksinimleri yazıya dökerim.</p>
+        </li>
+        <li>
+          <span class="step-no display">02</span>
+          <h3 data-i18n="process.2.t">Planlama</h3>
+          <p data-i18n="process.2.d">Sayfa yapısını, veri modelini ve API uçlarını tasarlar; işi küçük görevlere bölerim.</p>
+        </li>
+        <li>
+          <span class="step-no display">03</span>
+          <h3 data-i18n="process.3.t">Geliştirme</h3>
+          <p data-i18n="process.3.d">Arayüzü React ile, API'yi Node.js / NestJS ile yazar; Git ile düzenli commit atarak ilerlerim.</p>
+        </li>
+        <li>
+          <span class="step-no display">04</span>
+          <h3 data-i18n="process.4.t">Test &amp; Yayın</h3>
+          <p data-i18n="process.4.d">Mobil dahil test eder, Render'a deploy eder ve geri bildirimle iyileştiririm.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ YORUMLAR (js/projects.js içinde yorum eklenince görünür) ============ -->
+    <section class="panel p-light testimonials" id="testimonials" hidden>
+      <h2 class="display section-title" data-i18n="testi.title">Hakkımda Söylenenler</h2>
+      <div class="testi-grid" id="testiGrid"></div>
+    </section>
+
+    <!-- ============ 06 · İLETİŞİM ============ -->
+    <div class="row row--contact" id="contact">
+      <section class="panel p-dark contact-card reveal">
+        <h2 class="display contact-title" data-i18n="contact.title">BİRLİKTE<br>ÇALIŞALIM?</h2>
+        <a class="mail-pill" href="mailto:uyaali52@gmail.com">uyaali52@gmail.com</a>
+        <p class="contact-lead" data-i18n="contact.lead">Staj, junior pozisyon ya da freelance bir proje için bana yazabilirsin.</p>
+        <ul class="contact-links">
+          <li><a href="https://www.linkedin.com/in/ali-muhsin-misrakli-312574285" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="https://github.com/baboopsc" target="_blank" rel="noopener">GitHub ↗</a></li>
+          <li><span data-i18n="contact.locVal">Denizli, Türkiye · Remote'a açık</span></li>
+        </ul>
+      </section>
+
+      <section class="panel p-cream form-card reveal" aria-labelledby="formTitle">
+        <h2 class="display form-title" id="formTitle" data-i18n="form.title">Mesaj gönder</h2>
+        <form class="contact-form" id="contactForm" novalidate>
+          <label>
+            <span data-i18n="form.name">Adın</span>
+            <input type="text" name="name" required autocomplete="name">
+          </label>
+          <label>
+            <span data-i18n="form.email">E-posta adresin</span>
+            <input type="email" name="email" required autocomplete="email">
+          </label>
+          <label>
+            <span data-i18n="form.msg">Mesajın</span>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="btn btn--dark" type="submit" data-i18n="form.send">Gönder</button>
+          <p class="form-note" id="formNote" data-i18n="form.note">Gönder'e basınca e-posta uygulaman hazır mesajla açılır.</p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <!-- ============ ALT KISIM ============ -->
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Ali Muhsin Mışraklı</p>
+    <ul class="footer-links">
+      <li><a href="https://github.com/baboopsc" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/ali-muhsin-misrakli-312574285" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="mailto:uyaali52@gmail.com" data-i18n="contact.mail">E-posta</a></li>
+    </ul>
+    <a class="to-top" href="#hero" data-i18n="footer.top">Yukarı çık ↑</a>
+  </footer>
+
+  <!-- ============ PROJE DETAY PENCERESİ ============ -->
+  <dialog class="project-modal" id="projectModal" aria-labelledby="modalTitle">
+    <button class="modal-close" type="button" id="modalClose" aria-label="Kapat">×</button>
+    <div class="modal-body" id="modalBody"></div>
+  </dialog>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
