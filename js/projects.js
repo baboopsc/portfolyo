@@ -16,9 +16,9 @@ const PROJECTS = [
     category: "app",
     year: "2026",
     image: "images/projects/cinemania.jpg",
-    live: "https://cinemania-frontend.onrender.com",
-    github: "",
-    tech: ["React", "Vite", "TMDB API", "NestJS", "PostgreSQL", "SQLite", "Render"],
+    live: "https://cinemania-frontend.onrender.com/",
+    github: "https://github.com/baboopsc/cinemania-fullstack",
+    tech: ["React", "Vite", "TMDB API", "NestJS", "TypeORM", "PostgreSQL", "SQLite"],
     tr: {
       title: "Cinemania — Film Platformu",
       context: "Kodpit Teknoloji · Staj",
@@ -54,9 +54,9 @@ const PROJECTS = [
     category: "app",
     year: "2026",
     image: "images/projects/traveltrucks.jpg",
-    live: "",
-    github: "",
-    tech: ["React", "Redux Toolkit", "React Router", "Axios", "Render"],
+    live: "https://travel-trucks-silk-seven.vercel.app/",
+    github: "https://github.com/baboopsc/TravelTrucks",
+    tech: ["React", "Redux Toolkit", "React Router", "Axios", "Vite"],
     tr: {
       title: "TravelTrucks — Karavan Kiralama",
       context: "GoIT · Bootcamp projesi",
@@ -64,7 +64,7 @@ const PROJECTS = [
       summary: "Karavanları filtreleyip detaylarını inceleyebileceğin ve rezervasyon formu doldurabileceğin karavan kiralama uygulaması.",
       role: "Bireysel proje · Tasarımdan deploy'a tüm frontend",
       problem: "Kullanıcıların karavanları özelliklerine göre filtreleyip karşılaştırabileceği ve kolayca rezervasyon talebi bırakabileceği bir uygulama gerekiyordu.",
-      solution: "Global state ve filtreleri Redux Toolkit ile, katalog ve detay sayfalarını React Router ile, API isteklerini Axios ile yönettim. Uygulamayı Render'da yayına aldım.",
+      solution: "Global state ve filtreleri Redux Toolkit ile, katalog ve detay sayfalarını React Router ile, API isteklerini Axios ile yönettim ve uygulamayı yayına aldım.",
       highlights: [
         "Filtrelenebilir karavan kataloğu",
         "Her karavan için detay sayfası",
@@ -79,7 +79,7 @@ const PROJECTS = [
       summary: "A camper rental app where you can filter campers, explore detail pages and send a booking request.",
       role: "Solo project · The whole frontend, from design to deployment",
       problem: "Users needed a way to filter and compare campers by their features and easily send a booking request.",
-      solution: "I managed global state and filters with Redux Toolkit, catalog and detail pages with React Router, and API requests with Axios. The app is deployed on Render.",
+      solution: "I managed global state and filters with Redux Toolkit, catalog and detail pages with React Router, and API requests with Axios, then deployed the app.",
       highlights: [
         "Filterable camper catalog",
         "Detail page for each camper",
@@ -96,7 +96,7 @@ const PROJECTS = [
     image: "images/projects/xsportgym.jpg",
     live: "https://xsportgym.com",
     github: "",
-    tech: ["HTML", "CSS", "JavaScript", "Render", "Responsive"],
+    tech: ["Node.js", "Express", "PostgreSQL", "JWT", "Render"],
     tr: {
       title: "Xsportgym — Online Koçluk Sitesi",
       context: "Gerçek müşteri · Antakya",
@@ -104,11 +104,11 @@ const PROJECTS = [
       summary: "Antakya'daki bir spor salonunun link-in-bio sayfasının yerini alan, online koçluk paketlerini tanıtan web sitesi.",
       role: "Tek geliştirici · Tasarım, geliştirme, alan adı ve yayın",
       problem: "Salonun tek dijital vitrini bir link-in-bio sayfasıydı. Online koçluk paketlerini profesyonelce anlatacak, telefonda iyi görünen bir siteye ihtiyaç vardı.",
-      solution: "Siteyi müşteriyle birlikte tasarlayıp geliştirdim: logonun renklerinde tema, açık/koyu mod ve poster tarzı paket kapakları. Alan adını bağlayıp siteyi xsportgym.com adresinde yayına aldım.",
+      solution: "Siteyi müşteriyle birlikte tasarlayıp Node.js, Express ve PostgreSQL ile geliştirdim: logonun renklerinde tema, açık/koyu mod, poster tarzı paket kapakları ve içerikleri yönetmek için bir admin paneli. Alan adını bağlayıp siteyi xsportgym.com adresinde yayına aldım.",
       highlights: [
         "Gerçek bir müşteriye uçtan uca teslim edildi",
-        "Açık / koyu tema desteği",
-        "Mobil öncelikli tasarım",
+        "Admin paneli: bcrypt ile şifre, HttpOnly çerez, giriş deneme sınırı",
+        "Açık / koyu tema ve mobil öncelikli tasarım",
         "Özel alan adı: xsportgym.com"
       ]
     },
@@ -119,50 +119,12 @@ const PROJECTS = [
       summary: "A website for a gym in Antakya that replaced its link-in-bio page and presents its online coaching packages.",
       role: "Sole developer · Design, development, domain and launch",
       problem: "The gym's only online presence was a link-in-bio page. It needed a mobile-friendly site that presents its online coaching packages professionally.",
-      solution: "I designed and built the site together with the client: a theme in the logo's colors, light/dark mode and poster-style package covers. I connected the domain and launched it at xsportgym.com.",
+      solution: "I designed the site together with the client and built it with Node.js, Express and PostgreSQL: a theme in the logo's colors, light/dark mode, poster-style package covers and an admin panel to manage content. I connected the domain and launched it at xsportgym.com.",
       highlights: [
         "Delivered end to end to a real client",
-        "Light / dark theme",
-        "Mobile-first design",
+        "Admin panel: bcrypt passwords, HttpOnly cookies, login rate limiting",
+        "Light / dark theme and mobile-first design",
         "Custom domain: xsportgym.com"
-      ]
-    }
-  },
-
-  {
-    id: "run-kulesi",
-    category: "cv",
-    year: "2026",
-    image: "images/projects/run-kulesi.jpg",
-    live: "",
-    github: "https://github.com/baboopsc/GI_OYUN",
-    tech: ["Görüntü İşleme / Computer Vision", "El hareketi tanıma", "Gerçek zamanlı"],
-    tr: {
-      title: "Rün Kulesi — El Hareketiyle Oynanan Oyun",
-      context: "Görüntü İşleme dersi projesi",
-      badge: "Ders projesi",
-      summary: "Kameradan el işaretlerini gerçek zamanlı tanıyarak büyü yaptığın bir büyücü kule savunma oyunu.",
-      role: "Geliştirici · Oyun tasarımı ve hareket tanıma",
-      problem: "Ders kapsamında el hareketi tanıma algoritmalarıyla gerçek zamanlı, etkileşimli bir oyun geliştirmek.",
-      solution: "Oyuncu, kameraya yaptığı el işaretleriyle büyüler yapıp gelen dalgalara karşı kuleyi savunuyor; dalgalar arasında yardımcılar satın alabiliyor.",
-      highlights: [
-        "Kameradan gerçek zamanlı el hareketi tanıma",
-        "Hareketle tetiklenen büyüler",
-        "Dalga savunma sistemi ve dalga arası yardımcı satın alma"
-      ]
-    },
-    en: {
-      title: "Rune Tower — A Hand-Gesture Game",
-      context: "Image Processing course project",
-      badge: "Course project",
-      summary: "A wizard tower-defense game where you cast spells by making hand gestures in front of your webcam, recognized in real time.",
-      role: "Developer · Game design and gesture recognition",
-      problem: "For the course, build a real-time interactive game using hand gesture recognition algorithms.",
-      solution: "The player casts spells with hand gestures to defend the tower against incoming waves, and can buy helpers between waves.",
-      highlights: [
-        "Real-time hand gesture recognition from the webcam",
-        "Gesture-triggered spells",
-        "Wave defense with helpers bought between waves"
       ]
     }
   },
@@ -171,10 +133,10 @@ const PROJECTS = [
     id: "sag-fidancilik",
     category: "web",
     year: "2026",
-    image: "images/projects/sag-fidancilik.jpg",
-    live: "",
-    github: "",
-    tech: ["HTML", "CSS", "JavaScript", "SEO", "Responsive"],
+    image: "images/projects/sag-fidancilik.png",
+    live: "https://fidan-template.onrender.com/",
+    github: "https://github.com/baboopsc/fidan--template",
+    tech: ["Vite", "JavaScript", "Three.js", "SEO", "Responsive"],
     tr: {
       title: "Sağ Fidancılık — Fidancılık Web Sitesi",
       context: "Aile işletmesi · Devam ediyor",
@@ -201,44 +163,6 @@ const PROJECTS = [
         "SEO-focused structure",
         "Visual-first product presentation",
         "Mobile-friendly design"
-      ]
-    }
-  },
-
-  {
-    id: "sag-logo",
-    category: "app",
-    year: "2026",
-    image: "images/projects/sag-logo.jpg",
-    live: "",
-    github: "",
-    tech: ["Vite", "JavaScript", "Mobil öncelikli / Mobile-first"],
-    tr: {
-      title: "Logo Ekleme Aracı",
-      context: "Aile işletmesi için araç",
-      badge: "",
-      summary: "Fotoğraflara işletme logosunu ekleyen, iPhone'da rahat kullanılan basit bir web aracı.",
-      role: "Tek geliştirici",
-      problem: "İşletme sahibinin sosyal medyaya yüklediği fotoğraflara her seferinde logoyu kolayca ekleyebilmesi gerekiyordu; çoğunlukla telefondan.",
-      solution: "Fotoğrafı yükle, logoyu sürükle, boyutunu, saydamlığını ve gölgesini ayarla, indir. Birkaç hazır logo rengi var ve ayarlar bir sonraki kullanım için hatırlanıyor.",
-      highlights: [
-        "Mobil öncelikli, iOS'ta rahat kullanım",
-        "Sürükle, boyutlandır, saydamlık ve gölge ayarı",
-        "Ayarları hatırlama"
-      ]
-    },
-    en: {
-      title: "Logo Stamp Tool",
-      context: "Tool for a family business",
-      badge: "",
-      summary: "A simple web tool that adds a business logo to photos, designed to be easy to use on an iPhone.",
-      role: "Sole developer",
-      problem: "The business owner needed an easy way to add the logo to the photos he posts on social media, mostly from his phone.",
-      solution: "Upload a photo, drag the logo, adjust size, opacity and shadow, then download. A few preset logo colors are included and settings are remembered for next time.",
-      highlights: [
-        "Mobile-first, comfortable on iOS",
-        "Drag, resize, opacity and shadow controls",
-        "Remembers your settings"
       ]
     }
   }

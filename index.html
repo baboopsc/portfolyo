@@ -49,9 +49,9 @@
 
     <nav class="nav" id="nav" aria-label="Ana menü">
       <a href="#about" data-i18n="nav.about">Hakkımda</a>
-      <a href="#skills" data-i18n="nav.skills">Yetenekler</a>
       <a href="#experience" data-i18n="nav.experience">Deneyim</a>
       <a href="#projects" data-i18n="nav.projects">Projeler</a>
+      <a href="#skills" data-i18n="nav.skills">Yetenekler</a>
       <a href="#contact" data-i18n="nav.contact">İletişim</a>
     </nav>
 
@@ -80,6 +80,8 @@
         <p class="hero-sub">React · Redux · Node.js · NestJS · PostgreSQL</p>
         <div class="hero-cta">
           <a class="btn btn--dark" href="#projects" data-i18n="hero.cta1">Projelerim</a>
+          <a class="btn btn--social" href="https://www.linkedin.com/in/ali-muhsin-misrakli-312574285" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a class="btn btn--social" href="https://github.com/baboopsc" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
           <a class="btn btn--outline" href="assets/Ali_Muhsin_Misrakli_CV.pdf" download data-i18n="hero.cta2">CV İndir</a>
         </div>
       </div>
@@ -89,25 +91,49 @@
     <div class="row row--toc">
       <nav class="panel p-dark toc reveal" aria-label="İçindekiler">
         <h2 class="display toc-title" data-i18n="toc.title">İÇİN-<br>DEKİLER</h2>
+
+        <!-- Dekoratif kod penceresi -->
+        <svg class="toc-art" viewBox="0 0 320 178" role="img" aria-label="Kod editörü çizimi">
+          <rect x="1.5" y="1.5" width="317" height="175" rx="16" class="w-frame" />
+          <path d="M1.5 32 H318.5" class="w-line" />
+          <circle cx="20" cy="17" r="5" class="w-dot" />
+          <circle cx="36" cy="17" r="5" class="w-dot w-dot--2" />
+          <circle cx="52" cy="17" r="5" class="w-dot w-dot--3" />
+          <rect x="226" y="10" width="78" height="14" rx="7" class="w-tab" />
+          <text x="265" y="20.5" text-anchor="middle" class="w-tab-text">ali.jsx</text>
+          <g class="w-code">
+            <text x="20" y="58" class="w-ln">1</text><rect x="38" y="50" width="44" height="9" rx="4.5" class="c1" /><rect x="88" y="50" width="70" height="9" rx="4.5" class="c2" /><rect x="164" y="50" width="26" height="9" rx="4.5" class="c3" />
+            <text x="20" y="80" class="w-ln">2</text><rect x="54" y="72" width="60" height="9" rx="4.5" class="c3" /><rect x="120" y="72" width="96" height="9" rx="4.5" class="c1" />
+            <text x="20" y="102" class="w-ln">3</text><rect x="54" y="94" width="38" height="9" rx="4.5" class="c2" /><rect x="98" y="94" width="120" height="9" rx="4.5" class="c4" />
+            <text x="20" y="124" class="w-ln">4</text><rect x="70" y="116" width="84" height="9" rx="4.5" class="c1" /><rect x="160" y="116" width="40" height="9" rx="4.5" class="c3" />
+            <text x="20" y="146" class="w-ln">5</text><rect x="38" y="138" width="30" height="9" rx="4.5" class="c2" />
+            <rect x="74" y="136" width="3" height="13" rx="1.5" class="w-cursor" />
+          </g>
+          <g class="w-badge">
+            <rect x="214" y="128" width="92" height="34" rx="17" />
+            <text x="260" y="150" text-anchor="middle">&lt;ali /&gt;</text>
+          </g>
+        </svg>
+
         <ol class="toc-list">
-          <li><a href="#about"><span>02</span><span data-i18n="toc.about">hakkımda</span></a></li>
-          <li><a href="#skills"><span>03</span><span data-i18n="toc.skills">yetenekler</span></a></li>
-          <li><a href="#experience"><span>04</span><span data-i18n="toc.exp">deneyim</span></a></li>
-          <li><a href="#projects"><span>05</span><span data-i18n="toc.projects">projeler</span></a></li>
-          <li><a href="#contact"><span>06</span><span data-i18n="toc.contact">iletişim</span></a></li>
+          <li><a href="#about"><span class="toc-no">02</span><span data-i18n="toc.about">hakkımda</span><span class="toc-arrow" aria-hidden="true">→</span></a></li>
+          <li><a href="#experience"><span class="toc-no">03</span><span data-i18n="toc.exp">deneyim</span><span class="toc-arrow" aria-hidden="true">→</span></a></li>
+          <li><a href="#projects"><span class="toc-no">04</span><span data-i18n="toc.projects">projeler</span><span class="toc-arrow" aria-hidden="true">→</span></a></li>
+          <li><a href="#skills"><span class="toc-no">05</span><span data-i18n="toc.skills">yetenekler</span><span class="toc-arrow" aria-hidden="true">→</span></a></li>
+          <li><a href="#contact"><span class="toc-no">06</span><span data-i18n="toc.contact">iletişim</span><span class="toc-arrow" aria-hidden="true">→</span></a></li>
         </ol>
       </nav>
 
       <section class="panel p-cream about reveal" id="about">
         <figure class="about-photo">
-          <img src="images/ben.jpg" alt="Ali Muhsin Mışraklı" width="600" height="800" loading="lazy"
+          <img src="images/ben.jpg" alt="Ali Muhsin Mışraklı" width="828" height="1055" loading="lazy"
                data-placeholder="photo" data-file="images/ben.jpg">
         </figure>
         <div class="about-text">
           <h2 class="display about-title" data-i18n="about.title">Merhaba,<br><span class="hl">ben Ali!</span></h2>
-          <p data-i18n="about.p1">Pamukkale Üniversitesi'nde Bilgisayar Mühendisliği son sınıf öğrencisiyim (mezuniyet: Haziran 2027). React, Redux, Node.js, NestJS ve PostgreSQL ile full-stack web uygulamaları geliştiriyorum.</p>
-          <p data-i18n="about.p2">Kodpit Teknoloji'deki stajımda RESTful API servisleri ve bir React arayüzü geliştirdim, projeyi Render'da canlıya aldım. GoIT Full Stack bootcamp'inde eğitim aldım ve gerçek bir müşteri için bir web sitesini baştan sona teslim ettim.</p>
-          <p data-i18n="about.p3">Yapay zekâ destekli kodlama araçlarını her gün kullanıyorum; ama yayına almadan önce çıktıyı mutlaka okuyup test ediyorum.</p>
+          <p data-i18n="about.p1">Denizli'de yaşıyorum, Pamukkale Üniversitesi'nde Bilgisayar Mühendisliği son sınıftayım. Kod yazmanın en sevdiğim anı, kafamdaki bir fikrin gerçekten çalışan bir ürüne dönüştüğü an. Bir buton doğru veriyi getiriyor, sayfa telefonda da kusursuz görünüyorsa o gün iyi geçmiştir.</p>
+          <p data-i18n="about.p2">Öğrenmenin en iyi yolunun üretmek olduğuna inanıyorum, o yüzden derslerin yanında elimde hep bir proje oluyor. Kodpit'teki stajımda NestJS ile API'ler yazdım ve bir film platformunu ekiple birlikte canlıya aldık. Antakya'daki bir spor salonuna web sitesini baştan sona teslim ettim, şimdi de bir fidancılık işletmesinin sitesini geliştiriyorum.</p>
+          <p data-i18n="about.p3">Yapay zekâ araçlarını her gün kullanıyorum ama direksiyonu hiç bırakmıyorum: ürettiği kodu okur, test eder, anlamadığım hiçbir şeyi yayına almam. Şimdi kendimi geliştirmeye devam edebileceğim bir ekibin parçası olmak istiyorum.</p>
           <p class="status-badge">
             <span class="dot" aria-hidden="true"></span>
             <span data-i18n="about.status">Staj ve junior pozisyonlara açığım</span>
@@ -120,52 +146,17 @@
     <ul class="row row--stats">
       <li class="panel p-blue stat reveal"><strong class="display">40+</strong><span data-i18n="stats.repos">GitHub reposu</span></li>
       <li class="panel p-blue stat reveal"><strong class="display" id="statProjects">6</strong><span data-i18n="stats.projects">Öne çıkan proje</span></li>
-      <li class="panel p-blue stat reveal"><strong class="display">1</strong><span data-i18n="stats.client">Gerçek müşteri işi</span></li>
+      <li class="panel p-blue stat reveal"><strong class="display">690+</strong><span data-i18n="stats.hours">Saat full-stack eğitimi</span></li>
       <li class="panel p-blue stat reveal"><strong class="display">2027</strong><span data-i18n="stats.grad">Mezuniyet</span></li>
     </ul>
 
-    <!-- ============ 03 · YETENEKLER ============ -->
-    <section class="panel p-cream skills reveal" id="skills">
-      <h2 class="display section-title" data-i18n="skills.title">Yetkinliklerim</h2>
-
-      <div class="skills-grid">
-        <div class="skill-col">
-          <h3 class="pill-label" data-i18n="skills.tech">teknik</h3>
-          <dl class="skill-list">
-            <div><dt>Frontend</dt><dd>React, Redux Toolkit, JavaScript, HTML, CSS, Vite, React Router</dd></div>
-            <div><dt>Backend</dt><dd>Node.js, NestJS, REST API, Axios</dd></div>
-            <div><dt data-i18n="skills.db">Veritabanı</dt><dd>PostgreSQL, MongoDB, SQLite</dd></div>
-            <div><dt data-i18n="skills.tools">Araçlar</dt><dd>Git / GitHub, Docker, CI/CD, Render, Claude Code</dd></div>
-          </dl>
-        </div>
-
-        <div class="skill-col">
-          <h3 class="pill-label" data-i18n="skills.soft">kişisel</h3>
-          <ul class="bullet-list">
-            <li data-i18n="soft.1">Müşteriyle doğrudan iletişim: ihtiyacı dinleyip net bir plana dökme</li>
-            <li data-i18n="soft.2">Uçtan uca teslim: tasarımdan yayına kadar tüm süreç</li>
-            <li data-i18n="soft.3">Ekip çalışması: Git ile düzenli, okunabilir commit'ler</li>
-            <li data-i18n="soft.4">Sorumlu AI kullanımı: çıktıyı okuyup test ederek ilerleme</li>
-          </ul>
-        </div>
-
-        <div class="skill-col">
-          <h3 class="pill-label" data-i18n="skills.lang">diller</h3>
-          <ul class="bullet-list">
-            <li data-i18n="lang.tr">Türkçe — ana dil</li>
-            <li data-i18n="lang.en">İngilizce — B1 (orta seviye)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 04 · DENEYİM & EĞİTİM ============ -->
+    <!-- ============ 03 · DENEYİM & EĞİTİM ============ -->
     <section class="panel p-light experience reveal" id="experience">
       <h2 class="display section-title" data-i18n="exp.title">Deneyim &amp; Eğitim</h2>
 
       <ol class="exp-grid">
         <li class="exp-item">
-          <div class="exp-thumb" aria-hidden="true">K</div>
+          <div class="exp-thumb"><img src="images/logos/kodpit.png" alt="Kodpit Teknoloji logosu" width="160" height="160"></div>
           <span class="pill-label pill-label--solid" data-i18n="exp.kodpit.tag">staj</span>
           <p class="exp-date" data-i18n="exp.kodpit.date">Tem 2026 — Ağu 2026</p>
           <h3 data-i18n="exp.kodpit.role">Full-Stack Developer Stajyeri</h3>
@@ -177,15 +168,15 @@
           </ul>
         </li>
         <li class="exp-item">
-          <div class="exp-thumb" aria-hidden="true">G</div>
+          <div class="exp-thumb exp-thumb--wide"><img src="images/logos/goit.png" alt="GoIT logosu" width="555" height="166"></div>
           <span class="pill-label pill-label--solid" data-i18n="exp.goit.tag">bootcamp</span>
           <p class="exp-date" data-i18n="exp.goit.date">Oca 2026 — Eyl 2026</p>
           <h3>Full Stack Web Development</h3>
           <p class="exp-place">GoIT</p>
-          <p class="exp-desc" data-i18n="exp.goit.desc">React, Redux ve Node.js odaklı full-stack web geliştirme eğitimi. TravelTrucks gibi projeler bu süreçte çıktı.</p>
+          <p class="exp-desc" data-i18n="exp.goit.desc">HTML/CSS, JavaScript, React, Node.js ve TypeScript üzerine ~690 saatlik eğitim ve 3 takım projesi. TravelTrucks bu süreçte çıktı.</p>
         </li>
         <li class="exp-item">
-          <div class="exp-thumb" aria-hidden="true">PAÜ</div>
+          <div class="exp-thumb"><img src="images/logos/pau.png" alt="Pamukkale Üniversitesi logosu" width="300" height="300"></div>
           <span class="pill-label pill-label--solid" data-i18n="exp.pau.tag">lisans</span>
           <p class="exp-date" data-i18n="exp.pau.date">Eyl 2023 — Haz 2027 (beklenen)</p>
           <h3 data-i18n="exp.pau.role">Bilgisayar Mühendisliği</h3>
@@ -196,24 +187,55 @@
 
       <div class="certs">
         <h3 class="pill-label" data-i18n="exp.certs">sertifikalar</h3>
-        <ul class="cert-list">
-          <li>Introduction to Software Engineering</li>
-          <li>Continuous Integration and Continuous Delivery (CI/CD)</li>
-          <li>Fullstack Developer</li>
+
+        <ul class="cert-grid">
+          <li class="cert-card">
+            <a class="cert-thumb cert-thumb--portrait" href="assets/certificates/goit-fullstack-developer.pdf" target="_blank" rel="noopener">
+              <img src="images/certificates/goit-fullstack-developer.jpg" alt="GoIT Fullstack Developer sertifikası" width="800" height="1102" loading="lazy">
+            </a>
+            <p class="cert-meta"><span>GoIT</span> · <span data-i18n="cert.goit.date">Eki 2026</span></p>
+            <h4>Fullstack Developer</h4>
+            <p class="cert-note" data-i18n="cert.goit.note">~690 saat · HTML/CSS, JavaScript, React, Node.js, TypeScript · 3 takım projesi</p>
+            <div class="cert-actions">
+              <a class="btn btn--dark btn--sm" href="assets/certificates/goit-fullstack-developer.pdf" target="_blank" rel="noopener" data-i18n="cert.view">Görüntüle</a>
+            </div>
+          </li>
+          <li class="cert-card">
+            <a class="cert-thumb" href="assets/certificates/ibm-cicd.pdf" target="_blank" rel="noopener">
+              <img src="images/certificates/ibm-cicd.jpg" alt="IBM CI/CD sertifikası" width="800" height="618" loading="lazy">
+            </a>
+            <p class="cert-meta"><span>IBM · Coursera</span> · <span data-i18n="cert.ibm.date">Kas 2026</span></p>
+            <h4>Continuous Integration and Continuous Delivery (CI/CD)</h4>
+            <div class="cert-actions">
+              <a class="btn btn--dark btn--sm" href="assets/certificates/ibm-cicd.pdf" target="_blank" rel="noopener" data-i18n="cert.view">Görüntüle</a>
+              <a class="btn btn--outline btn--sm" href="https://coursera.org/verify/4GYVW8DKJLVD" target="_blank" rel="noopener" data-i18n="cert.verify">Doğrula ↗</a>
+            </div>
+          </li>
+          <li class="cert-card">
+            <a class="cert-thumb" href="assets/certificates/ibm-software-engineering.pdf" target="_blank" rel="noopener">
+              <img src="images/certificates/ibm-software-engineering.jpg" alt="IBM Introduction to Software Engineering sertifikası" width="800" height="618" loading="lazy">
+            </a>
+            <p class="cert-meta"><span>IBM · Coursera</span> · <span data-i18n="cert.ibm.date">Kas 2026</span></p>
+            <h4>Introduction to Software Engineering</h4>
+            <div class="cert-actions">
+              <a class="btn btn--dark btn--sm" href="assets/certificates/ibm-software-engineering.pdf" target="_blank" rel="noopener" data-i18n="cert.view">Görüntüle</a>
+              <a class="btn btn--outline btn--sm" href="https://coursera.org/verify/HYF4Q88J45N7" target="_blank" rel="noopener" data-i18n="cert.verify">Doğrula ↗</a>
+            </div>
+          </li>
         </ul>
+
         <a class="btn btn--dark" href="assets/Ali_Muhsin_Misrakli_CV.pdf" download data-i18n="hero.cta2">CV İndir</a>
       </div>
     </section>
 
-    <!-- ============ 05 · PROJELER ============ -->
+    <!-- ============ 04 · PROJELER ============ -->
     <section class="panel p-blue projects-head reveal" id="projects">
-      <h2 class="display projects-title" data-i18n="projects.title">PROJE-<br>LERİM</h2>
-      <p class="projects-lead" data-i18n="projects.lead">Staj, bootcamp, ders ve gerçek müşteri işlerinden seçtiğim projeler.</p>
+      <h2 class="display projects-title" data-i18n="projects.title">PROJELERİM</h2>
+      <p class="projects-lead" data-i18n="projects.lead">Staj, bootcamp ve gerçek müşteri işlerinden seçtiğim projeler. Canlı sitelere ve kodlara buradan ulaşabilirsin.</p>
       <div class="filters" id="filters">
         <button class="filter is-active" type="button" data-filter="all" data-i18n="filter.all">Tümü</button>
         <button class="filter" type="button" data-filter="app" data-i18n="filter.app">Web Uygulaması</button>
         <button class="filter" type="button" data-filter="web" data-i18n="filter.web">Web Sitesi</button>
-        <button class="filter" type="button" data-filter="cv" data-i18n="filter.cv">Görüntü İşleme</button>
       </div>
     </section>
 
@@ -223,6 +245,87 @@
       <span data-i18n="projects.more">Diğer 40+ repom GitHub'da</span>
       <span class="arrow" aria-hidden="true">↗</span>
     </a>
+
+    <!-- ============ 05 · YETENEKLER ============ -->
+    <section class="panel p-cream skills reveal" id="skills">
+      <h2 class="display section-title" data-i18n="skills.title">Yetkinliklerim</h2>
+
+      <div class="skills-grid">
+        <!-- Teknik -->
+        <article class="skill-card skill-card--tech">
+          <header class="skill-head">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 7 3 12l5 5M16 7l5 5-5 5M13.5 4.5l-3 15" /></svg>
+            </span>
+            <div>
+              <h3 class="display skill-title" data-i18n="skills.tech">Teknik</h3>
+              <p class="skill-sub" data-i18n="skills.techSub">Her gün kullandığım teknolojiler</p>
+            </div>
+          </header>
+          <div class="skill-rows">
+            <div class="skill-row">
+              <span class="skill-row-label">Frontend</span>
+              <ul class="chips"><li>React</li><li>Redux Toolkit</li><li>JavaScript</li><li>TypeScript</li><li>HTML</li><li>CSS</li><li>Vite</li><li>React Router</li></ul>
+            </div>
+            <div class="skill-row">
+              <span class="skill-row-label">Backend</span>
+              <ul class="chips"><li>Node.js</li><li>NestJS</li><li>Express</li><li>REST API</li><li>JWT</li></ul>
+            </div>
+            <div class="skill-row">
+              <span class="skill-row-label" data-i18n="skills.db">Veritabanı</span>
+              <ul class="chips"><li>PostgreSQL</li><li>MongoDB</li><li>SQLite</li><li>TypeORM</li></ul>
+            </div>
+            <div class="skill-row">
+              <span class="skill-row-label" data-i18n="skills.tools">Araçlar</span>
+              <ul class="chips"><li>Git / GitHub</li><li>Docker</li><li>CI/CD</li><li>Render</li><li>Claude Code</li></ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Kişisel -->
+        <article class="skill-card skill-card--soft">
+          <header class="skill-head">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" /><path d="M4 21c1.2-4 4.2-6 8-6s6.8 2 8 6" /></svg>
+            </span>
+            <div>
+              <h3 class="display skill-title" data-i18n="skills.soft">Kişisel</h3>
+              <p class="skill-sub" data-i18n="skills.softSub">Nasıl bir takım arkadaşıyım</p>
+            </div>
+          </header>
+          <ol class="soft-list">
+            <li><span class="soft-no">01</span><div><strong data-i18n="soft.1t">Müşteriyle iletişim</strong><p data-i18n="soft.1d">İhtiyacı dinler, net bir plana dökerim.</p></div></li>
+            <li><span class="soft-no">02</span><div><strong data-i18n="soft.2t">Uçtan uca teslim</strong><p data-i18n="soft.2d">Tasarımdan yayına kadar işi sahiplenirim.</p></div></li>
+            <li><span class="soft-no">03</span><div><strong data-i18n="soft.3t">Ekip çalışması</strong><p data-i18n="soft.3d">Git ile düzenli, okunabilir commit'ler atarım.</p></div></li>
+            <li><span class="soft-no">04</span><div><strong data-i18n="soft.4t">Sorumlu AI kullanımı</strong><p data-i18n="soft.4d">Çıktıyı okuyup test etmeden yayına almam.</p></div></li>
+          </ol>
+        </article>
+
+        <!-- Diller -->
+        <article class="skill-card skill-card--lang">
+          <header class="skill-head">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3Z" /></svg>
+            </span>
+            <div>
+              <h3 class="display skill-title" data-i18n="skills.lang">Diller</h3>
+              <p class="skill-sub" data-i18n="skills.langSub">Konuştuğum diller</p>
+            </div>
+          </header>
+          <ul class="lang-list">
+            <li>
+              <div class="lang-top"><strong data-i18n="lang.trName">Türkçe</strong><span class="lang-level" data-i18n="lang.trLevel">Ana dil</span></div>
+              <div class="lang-bar" aria-hidden="true"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span></div>
+            </li>
+            <li>
+              <div class="lang-top"><strong data-i18n="lang.enName">İngilizce</strong><span class="lang-level">B1</span></div>
+              <div class="lang-bar" aria-hidden="true"><span class="on"></span><span class="on"></span><span class="on"></span><span></span><span></span><span></span></div>
+              <div class="lang-scale" aria-hidden="true"><span>A1</span><span>A2</span><span>B1</span><span>B2</span><span>C1</span><span>C2</span></div>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
     <!-- ============ NASIL ÇALIŞIRIM ============ -->
     <section class="panel p-cream process reveal" id="process">
